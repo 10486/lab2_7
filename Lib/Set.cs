@@ -7,6 +7,7 @@ namespace Lib
     public class Set : IEnumerable
     {
         List<int> Container = new List<int>();
+
         public int Count
         {
             get 
@@ -14,10 +15,12 @@ namespace Lib
                 return Container.Count; 
             } 
         }
+
         public Set()
         {
 
         }
+        // Конструктор для копирования
         public Set(Set set)
         {
             Set t;
@@ -61,23 +64,28 @@ namespace Lib
             }
             return tmp;
         }
-
+        #region Операторы сравнения
         public static bool operator>(Set a,Set b)
         {
             return a.Count > b.Count;
         }
+
         public static bool operator<(Set a,Set b)
         {
             return a.Count < b.Count;
         }
+
         public static bool operator==(Set a,Set b)
         {
             return a.Count == b.Count;
         }
+
         public static bool operator!=(Set a,Set b)
         {
             return !(a.Count == b.Count);
         }
+        #endregion
+
         public override string ToString()
         {
             var res = "{";
