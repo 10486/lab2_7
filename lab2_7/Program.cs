@@ -74,7 +74,7 @@ namespace lab2_7
                 "add setNumber value - добавить в множество с индексом setNumber value\n" +
                 "remove setNumber value - удалить из множества с индексом setNumber value\n" +
                 "compare setA setB - сравнить мощности множеств с индексами а и b\n" +
-                "dif etA setB - разность множеств с индексами а и b\n" +
+                "dif etA setB - разность множеств с индексами а и b (создает новое множетсво)\n" +
                 "print - печать всех множеств\n" +
                 "print setNumber - печать множества с индексом setNumber\n" +
                 "help - напечатать списко комманд\n" +
